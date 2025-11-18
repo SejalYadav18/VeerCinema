@@ -24,7 +24,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Branding */}
           <div>
-            <h2 className="font-heading text-3xl text-foreground mb-3">
+            <h2 className="font-heading text-3xl text-primary mb-3">
               VEER CINEMA WORLD
             </h2>
             <p className="text-accent text-sm font-medium mb-4 tracking-wider">

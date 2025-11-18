@@ -178,7 +178,7 @@ export default function Home() {
         </div>
 
         <div className="relative h-full flex flex-col items-center justify-center text-center px-6 z-10">
-          <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl text-foreground mb-4 tracking-wider" data-testid="text-hero-title">
+          <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl text-primary mb-4 tracking-wider" data-testid="text-hero-title">
             VEER CINEMA WORLD
           </h1>
           <p className="text-xl md:text-3xl text-foreground/90 mb-3 font-light">

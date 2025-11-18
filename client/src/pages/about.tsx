@@ -17,7 +17,7 @@ export default function About() {
         
         <div className="relative max-w-4xl mx-auto text-center">
           <div className="border-t-2 border-b-2 border-accent/50 py-8 mb-8">
-            <h1 className="font-heading text-6xl md:text-7xl text-foreground" data-testid="text-about-title">
+            <h1 className="font-heading text-6xl md:text-7xl text-primary" data-testid="text-about-title">
               VEER CINEMA WORLD
             </h1>
           </div>
