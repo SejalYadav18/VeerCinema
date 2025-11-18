@@ -1,0 +1,208 @@
+🎬 OVERALL THEME
+
+Colors: Black, Deep Red, Gold
+
+Style: Premium, cinematic, Indian-film-industry style like YRF, Dharma, Nadiadwala
+
+Typography: Bold cinematic headings + clean body text
+
+Animations: Parallax, fade-ins, smooth transitions
+
+Add dynamic sliders, carousels, and modals
+
+🏠 1. HOME PAGE (YRF Style)
+Hero Section:
+
+Full-width video banner or cinematic image carousel
+
+Add 4 Bollywood-style film banners (royalty-free lookalikes).
+
+Text overlay:
+“VEER CINEMA WORLD”
+“Where Stories Turn Into Legend.”
+
+Buttons:
+
+Explore Films
+
+About Us
+
+🎞️ 2. LATEST FILMS (Dynamic Slider)
+
+Create a horizontal slider like YRF Films page.
+
+Add 6 Bollywood-inspired film posters:
+
+The Rising Shadows – Action/Spy
+
+Eternal Bloom – Romance
+
+City of Wolves – Crime/Thriller
+
+Veer: The Legend Within – Biopic
+
+The Crimson Hunt – Mystery
+
+Saffron Sky – Family Drama
+
+Each opens a dynamic popup or page with:
+
+Poster
+
+Trailer placeholder
+
+Synopsis
+
+Cast & Crew
+
+Behind-the-scenes images
+
+Use Bollywood-style dramatic color grading.
+
+🎥 3. ABOUT VEER CINEMA WORLD
+
+A cinematic section with gold borders and dramatic visuals.
+
+Content:
+“VEER Cinema World is a modern Indian production house creating films, web series, music videos, and digital cinema. Inspired by the legacy of Bollywood, VEER combines storytelling, innovation, and cinematic passion.”
+
+Add a background image resembling a film set or director’s workspace.
+
+🎭 4. ACTORS & ACTRESSES PORTFOLIO (YRF Talent Style)
+
+Create a dynamic grid of Bollywood-looking actor/actress images (royalty-free).
+
+Add cards for:
+
+Lead Actor
+
+Lead Actress
+
+Supporting Actor
+
+Supporting Actress
+
+Director
+
+Cinematographer
+
+Script Writer
+
+Music Director
+
+Each card should have hover animations.
+
+🎬 5. FILMS PAGE (Dynamic Gallery)
+
+Create a grid layout with cinematic posters.
+When clicked, show:
+
+HD Poster
+
+Genre
+
+Year
+
+Story Summary
+
+Cast with actor images
+
+Trailer embed
+
+Awards
+
+Gallery
+
+Design it like YRF Films Library.
+
+🛠️ 6. SERVICES PAGE (Production House Style)
+
+Add sections for:
+
+Film Production
+
+Script Development
+
+Casting
+
+Direction
+
+Post-Production (Editing/Sound)
+
+Music Production
+
+VFX & CGI
+
+Web Series Production
+
+Use premium icons and animations.
+
+👥 7. TEAM PAGE
+
+Add Bollywood-style portraits with gold frames.
+
+Founder:
+
+Veer Pratap Singh – Producer, Creative Director
+
+Team:
+
+Head of Production
+
+Casting Director
+
+Script Lead
+
+Cinematographer
+
+VFX Supervisor
+
+Music Director
+
+📩 8. CONTACT PAGE
+
+Add:
+
+Name
+
+Email
+
+Message
+
+Dropdown (Film Inquiry / Casting / Media / Career)
+
+Upload Portfolio
+
+Emails to include (fake placeholders):
+
+contact@veercinemaworld.com
+
+casting@veercinemaworld.com
+
+media@veercinemaworld.com
+
+🔗 9. FOOTER (YRF Styled)
+
+Add:
+
+VEER Cinema World © 2025
+“Cinema. Courage. Creativity.”
+
+Links: Films | About | Services | Talent | Careers | Contact
+Social icons: Instagram, YouTube, Facebook, IMDb
+
+⭐ ADDITIONAL REQUIREMENTS
+
+Fully responsive
+
+Dynamic animations
+
+Parallax hero section
+
+Use royalty-free Bollywood-style stock images
+
+No copyrighted content
+
+Add scroll-triggered fade-ins
+
+Make the site visually similar to YRF’s premium cinematic style
