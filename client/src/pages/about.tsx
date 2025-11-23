@@ -24,8 +24,8 @@ export default function About() {
             </h1>
           </div>
           
-          <div className="space-y-6 text-lg text-white/95 leading-relaxed">
-            <p className="text-xl md:text-2xl font-light text-yellow-300 drop-shadow-lg">
+          <div className="space-y-6 text-lg text-white leading-relaxed">
+            <p className="text-xl md:text-2xl font-light text-yellow-200 drop-shadow-lg">
               Cinema. Courage. Creativity.
             </p>
             
@@ -54,7 +54,7 @@ export default function About() {
                   OUR MISSION
                 </h2>
               </div>
-              <p className="text-foreground text-lg leading-relaxed font-semibold bg-accent/10 px-4 py-3 rounded-md border-l-4 border-accent">
+              <p className="text-white text-lg leading-relaxed font-semibold bg-accent/20 px-4 py-3 rounded-md border-l-4 border-accent">
                 To create world-class cinematic experiences that celebrate Indian culture, values, and storytelling traditions while pushing the boundaries of creative excellence. We are committed to discovering new talent, nurturing artistic vision, and producing content that stands the test of time.
               </p>
             </div>
@@ -65,7 +65,7 @@ export default function About() {
                   OUR VISION
                 </h2>
               </div>
-              <p className="text-foreground text-lg leading-relaxed font-semibold bg-primary/10 px-4 py-3 rounded-md border-l-4 border-primary">
+              <p className="text-white text-lg leading-relaxed font-semibold bg-primary/20 px-4 py-3 rounded-md border-l-4 border-primary">
                 To be recognized as a leading production house that bridges tradition and innovation, bringing Indian stories to global audiences. We envision a future where our films inspire millions, our artists flourish, and our legacy continues to shape the future of cinema.
               </p>
             </div>
@@ -77,7 +77,7 @@ export default function About() {
       <section className="py-20 px-6 bg-background">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="font-heading text-5xl md:text-6xl text-foreground mb-4" data-testid="text-values-title">
+            <h2 className="font-heading text-5xl md:text-6xl text-white mb-4 font-bold" data-testid="text-values-title">
               OUR VALUES
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto" />
@@ -115,8 +115,8 @@ export default function About() {
                 className="p-6 rounded-md border border-accent/20 bg-card hover-elevate"
                 data-testid={`card-value-${index}`}
               >
-                <h3 className="font-heading text-2xl text-accent mb-3 bg-accent/20 px-3 py-2 rounded-md inline-block">{value.title}</h3>
-                <p className="text-foreground leading-relaxed font-medium">
+                <h3 className="font-heading text-2xl text-yellow-300 mb-3 bg-accent/30 px-3 py-2 rounded-md inline-block font-bold">{value.title}</h3>
+                <p className="text-white/95 leading-relaxed font-medium">
                   {value.description}
                 </p>
               </div>
@@ -136,10 +136,10 @@ export default function About() {
               { number: "100+", label: "Team Members" },
             ].map((stat, index) => (
               <div key={index} data-testid={`stat-${index}`}>
-                <div className="font-heading text-5xl md:text-6xl text-accent mb-2 font-bold">
+                <div className="font-heading text-5xl md:text-6xl text-yellow-300 mb-2 font-bold">
                   {stat.number}
                 </div>
-                <div className="text-foreground text-sm md:text-base font-semibold">
+                <div className="text-white text-sm md:text-base font-semibold">
                   {stat.label}
                 </div>
               </div>
