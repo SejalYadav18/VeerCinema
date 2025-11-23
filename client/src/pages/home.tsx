@@ -127,6 +127,7 @@ export default function Home() {
   const [currentHero, setCurrentHero] = useState(0);
   const [selectedFilm, setSelectedFilm] = useState<typeof films[0] | null>(null);
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [visibleElements, setVisibleElements] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -139,6 +140,22 @@ export default function Home() {
     const handleScroll = () => setScrollPosition(window.scrollY);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisibleElements((prev) => new Set([...prev, entry.target.id]));
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    document.querySelectorAll('[data-animate]').forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
   }, []);
 
   const nextHero = () => setCurrentHero((prev) => (prev + 1) % heroImages.length);
@@ -170,7 +187,7 @@ export default function Home() {
               <img
                 src={hero.src}
                 alt={hero.title}
-                className="w-full h-full object-cover filter blur-sm brightness-110 contrast-105 saturate-125"
+                className="w-full h-full object-cover brightness-110 contrast-105 saturate-125"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-red-900/30 to-transparent" />
             </div>
@@ -240,9 +257,9 @@ export default function Home() {
       </section>
 
       {/* Latest Films Slider */}
-      <section className="py-20 px-6 bg-card" data-testid="section-latest-films">
+      <section className="py-20 px-6 bg-card" data-testid="section-latest-films" id="section-films" data-animate>
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
+          <div className={`text-center mb-12 fade-in ${visibleElements.has('section-films') ? 'visible' : ''}`}>
             <h2 className="font-heading text-5xl md:text-6xl text-foreground mb-4" data-testid="text-latest-films-title">
               LATEST FILMS
             </h2>
@@ -263,10 +280,10 @@ export default function Home() {
               className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth pb-4"
               style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             >
-              {films.map((film) => (
+              {films.map((film, index) => (
                 <Card
                   key={film.id}
-                  className="flex-shrink-0 w-64 overflow-hidden cursor-pointer group hover-elevate active-elevate-2 border-card-border"
+                  className={`flex-shrink-0 w-64 overflow-hidden cursor-pointer group hover-elevate active-elevate-2 border-card-border fade-in fade-in-delay-${(index % 3) + 1} ${visibleElements.has('section-films') ? 'visible' : ''}`}
                   onClick={() => setSelectedFilm(film)}
                   data-testid={`card-film-${film.id}`}
                 >
