@@ -149,8 +149,8 @@ export default function Films() {
         <div className="max-w-2xl mx-auto mb-12 p-6 bg-card rounded-lg border border-accent/20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label className="block text-lg font-heading text-accent mb-3" data-testid="label-categories">
-                CATEGORIES
+              <label className="block text-lg font-heading text-accent mb-3" data-testid="label-films">
+                FILMS
               </label>
               <Select value={genreFilter} onValueChange={setGenreFilter}>
                 <SelectTrigger className="w-full" data-testid="select-genre">
