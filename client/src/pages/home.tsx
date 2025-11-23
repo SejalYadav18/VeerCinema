@@ -170,9 +170,9 @@ export default function Home() {
               <img
                 src={hero.src}
                 alt={hero.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover filter blur-sm brightness-110 contrast-105 saturate-125"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-red-900/30 to-transparent" />
             </div>
           ))}
         </div>
