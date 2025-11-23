@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { ChevronLeft, ChevronRight, Play } from "lucide-react";
-import heroAction from "@assets/generated_images/Action_spy_thriller_hero_banner_fd0db068.png";
-import heroRomance from "@assets/generated_images/Romantic_film_hero_banner_2afea242.png";
-import heroCrime from "@assets/generated_images/Crime_thriller_hero_banner_8cf4cab3.png";
-import heroFamily from "@assets/generated_images/Family_drama_hero_banner_840e5ca5.png";
+import heroCinematic from "@assets/generated_images/cinematic_film_production_set.png";
+import heroPremiere from "@assets/generated_images/bollywood_premiere_red_carpet.png";
+import heroAction from "@assets/generated_images/epic_action_cinema_scene.png";
+import heroFilmNoir from "@assets/generated_images/film_noir_theatrical_scene.png";
 import posterShadows from "@assets/generated_images/The_Rising_Shadows_poster_d7ecb704.png";
 import posterBloom from "@assets/generated_images/Eternal_Bloom_poster_f0413118.png";
 import posterWolves from "@assets/generated_images/City_of_Wolves_poster_3810bbbf.png";
@@ -24,10 +24,10 @@ import supportingActorImg from "@assets/generated_images/Supporting_actor_portra
 import supportingActressImg from "@assets/generated_images/Supporting_actress_portrait_58b15dcf.png";
 
 const heroImages = [
-  { src: heroAction, title: "Where Stories Turn Into Legend", subtitle: "Cinematic Excellence Since 2025" },
-  { src: heroRomance, title: "Crafting Emotions That Last Forever", subtitle: "Love. Drama. Legacy." },
-  { src: heroCrime, title: "Unveiling Stories That Captivate", subtitle: "Mystery. Suspense. Brilliance." },
-  { src: heroFamily, title: "Celebrating Life's Beautiful Moments", subtitle: "Heart. Heritage. Home." },
+  { src: heroCinematic, title: "Where Stories Turn Into Legend", subtitle: "Cinematic Excellence Since 2025", titleColor: "text-white", subtitleColor: "text-yellow-300" },
+  { src: heroPremiere, title: "Crafting Emotions That Last Forever", subtitle: "Love. Drama. Legacy.", titleColor: "text-white", subtitleColor: "text-red-300" },
+  { src: heroAction, title: "Unveiling Stories That Captivate", subtitle: "Mystery. Suspense. Brilliance.", titleColor: "text-yellow-200", subtitleColor: "text-yellow-100" },
+  { src: heroFilmNoir, title: "Celebrating Life's Beautiful Moments", subtitle: "Heart. Heritage. Home.", titleColor: "text-white", subtitleColor: "text-amber-300" },
 ];
 
 const films = [
@@ -178,13 +178,13 @@ export default function Home() {
         </div>
 
         <div className="relative h-full flex flex-col items-center justify-center text-center px-6 z-10">
-          <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl text-primary mb-4 tracking-wider" data-testid="text-hero-title">
+          <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl text-white mb-4 tracking-wider drop-shadow-2xl" data-testid="text-hero-title">
             VEER CINEMA WORLD
           </h1>
-          <p className="text-xl md:text-3xl text-foreground/90 mb-3 font-light">
+          <p className={`text-xl md:text-3xl ${heroImages[currentHero].titleColor} mb-3 font-light drop-shadow-lg`}>
             {heroImages[currentHero].title}
           </p>
-          <p className="text-lg md:text-xl text-accent mb-12 font-medium">
+          <p className={`text-lg md:text-xl ${heroImages[currentHero].subtitleColor} mb-12 font-medium drop-shadow-lg`}>
             {heroImages[currentHero].subtitle}
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
