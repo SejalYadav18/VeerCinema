@@ -146,32 +146,44 @@ export default function Films() {
         </div>
 
         {/* Filters */}
-        <div className="flex flex-wrap gap-4 justify-center mb-12">
-          <Select value={genreFilter} onValueChange={setGenreFilter}>
-            <SelectTrigger className="w-48" data-testid="select-genre">
-              <SelectValue placeholder="Filter by Genre" />
-            </SelectTrigger>
-            <SelectContent>
-              {genres.map((genre) => (
-                <SelectItem key={genre} value={genre} data-testid={`option-genre-${genre.toLowerCase().replace(/\//g, '-')}`}>
-                  {genre}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
+        <div className="max-w-2xl mx-auto mb-12 p-6 bg-card rounded-lg border border-accent/20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label className="block text-lg font-heading text-accent mb-3" data-testid="label-categories">
+                CATEGORIES
+              </label>
+              <Select value={genreFilter} onValueChange={setGenreFilter}>
+                <SelectTrigger className="w-full" data-testid="select-genre">
+                  <SelectValue placeholder="Select a category" />
+                </SelectTrigger>
+                <SelectContent>
+                  {genres.map((genre) => (
+                    <SelectItem key={genre} value={genre} data-testid={`option-genre-${genre.toLowerCase().replace(/\//g, '-')}`}>
+                      {genre}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
 
-          <Select value={yearFilter} onValueChange={setYearFilter}>
-            <SelectTrigger className="w-48" data-testid="select-year">
-              <SelectValue placeholder="Filter by Year" />
-            </SelectTrigger>
-            <SelectContent>
-              {years.map((year) => (
-                <SelectItem key={year} value={year} data-testid={`option-year-${year.toLowerCase()}`}>
-                  {year}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
+            <div>
+              <label className="block text-lg font-heading text-accent mb-3" data-testid="label-years">
+                YEARS
+              </label>
+              <Select value={yearFilter} onValueChange={setYearFilter}>
+                <SelectTrigger className="w-full" data-testid="select-year">
+                  <SelectValue placeholder="Select a year" />
+                </SelectTrigger>
+                <SelectContent>
+                  {years.map((year) => (
+                    <SelectItem key={year} value={year} data-testid={`option-year-${year.toLowerCase()}`}>
+                      {year}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+          </div>
         </div>
 
         {/* Films Grid */}
