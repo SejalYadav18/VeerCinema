@@ -11,11 +11,11 @@ export default function About() {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
-          filter: 'brightness(1.3) contrast(1.2) saturate(1.3)',
+          filter: 'brightness(0.6) contrast(1.1)',
         }}
         data-testid="section-about-hero"
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-red-900/20 to-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-red-900/40 to-black/70" />
         
         <div className="relative max-w-4xl mx-auto text-center">
           <div className="border-t-2 border-b-2 border-yellow-400 py-8 mb-8">
