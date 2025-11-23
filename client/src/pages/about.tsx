@@ -10,32 +10,34 @@ export default function About() {
           backgroundImage: `url(${filmSetBg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
+          backgroundAttachment: 'fixed',
+          filter: 'brightness(1.3) contrast(1.2) saturate(1.3)',
         }}
         data-testid="section-about-hero"
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-red-900/20 to-black/50" />
         
         <div className="relative max-w-4xl mx-auto text-center">
-          <div className="border-t-2 border-b-2 border-accent/50 py-8 mb-8">
-            <h1 className="font-heading text-6xl md:text-7xl text-primary" data-testid="text-about-title">
+          <div className="border-t-2 border-b-2 border-yellow-400 py-8 mb-8">
+            <h1 className="font-heading text-6xl md:text-7xl text-white drop-shadow-2xl" data-testid="text-about-title">
               VEER CINEMA WORLD
             </h1>
           </div>
           
-          <div className="space-y-6 text-lg text-foreground/90 leading-relaxed">
-            <p className="text-xl md:text-2xl font-light text-accent">
+          <div className="space-y-6 text-lg text-white/95 leading-relaxed">
+            <p className="text-xl md:text-2xl font-light text-yellow-300 drop-shadow-lg">
               Cinema. Courage. Creativity.
             </p>
             
-            <p>
+            <p className="drop-shadow-lg">
               VEER Cinema World is a modern Indian production house creating films, web series, music videos, and digital cinema. Inspired by the legacy of Bollywood, VEER combines storytelling, innovation, and cinematic passion.
             </p>
             
-            <p>
+            <p className="drop-shadow-lg">
               Founded with a vision to revolutionize Indian cinema, we believe in the power of stories to inspire, entertain, and transform. Our team of dedicated filmmakers, writers, and artists work tirelessly to bring compelling narratives to life.
             </p>
             
-            <p>
+            <p className="drop-shadow-lg">
               From heart-warming family dramas to edge-of-your-seat thrillers, from grand historical epics to intimate character studies – we craft films that resonate across generations and cultures.
             </p>
           </div>
