@@ -29,15 +29,15 @@ export default function About() {
               Cinema. Courage. Creativity.
             </p>
             
-            <p className="drop-shadow-lg">
+            <p className="drop-shadow-lg font-semibold bg-black/40 px-6 py-4 rounded-lg border-l-4 border-yellow-400">
               VEER Cinema World is a modern Indian production house creating films, web series, music videos, and digital cinema. Inspired by the legacy of Bollywood, VEER combines storytelling, innovation, and cinematic passion.
             </p>
             
-            <p className="drop-shadow-lg">
+            <p className="drop-shadow-lg font-semibold bg-black/40 px-6 py-4 rounded-lg border-l-4 border-yellow-400">
               Founded with a vision to revolutionize Indian cinema, we believe in the power of stories to inspire, entertain, and transform. Our team of dedicated filmmakers, writers, and artists work tirelessly to bring compelling narratives to life.
             </p>
             
-            <p className="drop-shadow-lg">
+            <p className="drop-shadow-lg font-semibold bg-black/40 px-6 py-4 rounded-lg border-l-4 border-yellow-400">
               From heart-warming family dramas to edge-of-your-seat thrillers, from grand historical epics to intimate character studies – we craft films that resonate across generations and cultures.
             </p>
           </div>
@@ -54,7 +54,7 @@ export default function About() {
                   OUR MISSION
                 </h2>
               </div>
-              <p className="text-muted-foreground text-lg leading-relaxed">
+              <p className="text-foreground text-lg leading-relaxed font-semibold bg-accent/10 px-4 py-3 rounded-md border-l-4 border-accent">
                 To create world-class cinematic experiences that celebrate Indian culture, values, and storytelling traditions while pushing the boundaries of creative excellence. We are committed to discovering new talent, nurturing artistic vision, and producing content that stands the test of time.
               </p>
             </div>
@@ -65,7 +65,7 @@ export default function About() {
                   OUR VISION
                 </h2>
               </div>
-              <p className="text-muted-foreground text-lg leading-relaxed">
+              <p className="text-foreground text-lg leading-relaxed font-semibold bg-primary/10 px-4 py-3 rounded-md border-l-4 border-primary">
                 To be recognized as a leading production house that bridges tradition and innovation, bringing Indian stories to global audiences. We envision a future where our films inspire millions, our artists flourish, and our legacy continues to shape the future of cinema.
               </p>
             </div>
@@ -115,8 +115,8 @@ export default function About() {
                 className="p-6 rounded-md border border-accent/20 bg-card hover-elevate"
                 data-testid={`card-value-${index}`}
               >
-                <h3 className="font-heading text-2xl text-accent mb-3">{value.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <h3 className="font-heading text-2xl text-accent mb-3 bg-accent/20 px-3 py-2 rounded-md inline-block">{value.title}</h3>
+                <p className="text-foreground leading-relaxed font-medium">
                   {value.description}
                 </p>
               </div>
@@ -136,10 +136,10 @@ export default function About() {
               { number: "100+", label: "Team Members" },
             ].map((stat, index) => (
               <div key={index} data-testid={`stat-${index}`}>
-                <div className="font-heading text-5xl md:text-6xl text-accent mb-2">
+                <div className="font-heading text-5xl md:text-6xl text-accent mb-2 font-bold">
                   {stat.number}
                 </div>
-                <div className="text-muted-foreground text-sm md:text-base">
+                <div className="text-foreground text-sm md:text-base font-semibold">
                   {stat.label}
                 </div>
               </div>
