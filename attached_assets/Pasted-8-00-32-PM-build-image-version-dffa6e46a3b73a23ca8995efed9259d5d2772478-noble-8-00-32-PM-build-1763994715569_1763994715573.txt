@@ -1,0 +1,141 @@
+8:00:32 PM: build-image version: dffa6e46a3b73a23ca8995efed9259d5d2772478 (noble)
+8:00:32 PM: buildbot version: 91fc597bd5d0118ee1f60dbaad1198626ecc887e
+8:00:32 PM: Fetching cached dependencies
+8:00:32 PM: Failed to fetch cache, continuing with build
+8:00:32 PM: Starting to prepare the repo for build
+8:00:33 PM: No cached dependencies found. Cloning fresh repo
+8:00:33 PM: git clone --filter=blob:none https://github.com/SejalYadav18/VeerCinema
+8:00:33 PM: Preparing Git Reference refs/heads/main
+8:00:34 PM: Custom publish path detected. Proceeding with the specified path: 'dist/client'
+8:00:34 PM: Custom build command detected. Proceeding with the specified command: 'npm run build'
+8:00:35 PM: Starting to install dependencies
+8:00:36 PM: Downloading and installing node v20.19.5...
+8:00:36 PM: Downloading https://nodejs.org/dist/v20.19.5/node-v20.19.5-linux-x64.tar.xz...
+8:00:38 PM: Computing checksum with sha256sum
+8:00:38 PM: Checksums matched!
+8:00:39 PM: Now using node v20.19.5 (npm v10.8.2)
+8:00:40 PM: Enabling Node.js Corepack
+8:00:40 PM: Started restoring cached build plugins
+8:00:40 PM: Finished restoring cached build plugins
+8:00:40 PM: Started restoring cached corepack dependencies
+8:00:40 PM: Finished restoring cached corepack dependencies
+8:00:40 PM: No npm workspaces detected
+8:00:40 PM: Started restoring cached node modules
+8:00:40 PM: Finished restoring cached node modules
+8:00:40 PM: Installing npm packages using npm version 10.8.2
+8:00:42 PM: npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+8:00:42 PM: npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+8:00:44 PM: added 478 packages in 4s
+8:00:44 PM: npm packages installed
+8:00:45 PM: Successfully installed dependencies
+8:00:45 PM: Starting build script
+8:00:45 PM: Detected 1 framework(s)
+8:00:45 PM: "vite" at version "5.4.20"
+8:00:45 PM: Section completed: initializing
+8:00:46 PM: ​
+8:00:46 PM: Netlify Build                                                 
+8:00:46 PM: ────────────────────────────────────────────────────────────────
+8:00:46 PM: ​
+8:00:46 PM: ❯ Version
+8:00:46 PM:   @netlify/build 35.4.0
+8:00:46 PM: ​
+8:00:46 PM: ❯ Flags
+8:00:46 PM:   accountId: 69246af8512aef189548b9de
+8:00:46 PM:   baseRelDir: true
+8:00:46 PM:   buildId: 69246c07a4503e1ff23a829b
+8:00:46 PM:   deployId: 69246c07a4503e1ff23a829d
+8:00:47 PM: ​
+8:00:47 PM: ❯ Current directory
+8:00:47 PM:   /opt/build/repo
+8:00:47 PM: ​
+8:00:47 PM: ❯ Config file
+8:00:47 PM:   /opt/build/repo/netlify.toml
+8:00:47 PM: ​
+8:00:47 PM: ❯ Context
+8:00:47 PM:   production
+8:00:47 PM: ​
+8:00:47 PM: build.command from netlify.toml                               
+8:00:47 PM: ────────────────────────────────────────────────────────────────
+8:00:47 PM: ​
+8:00:47 PM: $ npm run build
+8:00:47 PM: > rest-express@1.0.0 build
+8:00:47 PM: > vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+8:00:47 PM: vite v5.4.20 building for production...
+8:00:47 PM: transforming...
+8:00:50 PM: A PostCSS plugin did not pass the `from` option to `postcss.parse`. This may cause imported assets to be incorrectly transformed. If you've recently added a PostCSS plugin that raised this warning, please contact the package author to fix the issue.
+✓ 1862 modules transformed.
+8:00:51 PM: Failed during stage 'building site': Build script returned non-zero exit code: 2 (https://ntl.fyi/exit-code-2)
+8:00:51 PM: rendering chunks...
+8:00:51 PM: computing gzip size...
+8:00:51 PM: ../dist/public/index.html                                                    2.05 kB │ gzip:   0.79 kB
+8:00:51 PM: ../dist/public/assets/Script_lead_portrait_6f913024-DVZ4lGUa.png         1,127.45 kB
+8:00:51 PM: ../dist/public/assets/Script_writer_portrait_705de9b7-BHdBkMbV.png       1,156.92 kB
+8:00:51 PM: ../dist/public/assets/Film_director_portrait_16097a7d-CO8BIRV-.png       1,192.59 kB
+8:00:51 PM: ../dist/public/assets/Casting_director_portrait_9cb67a41-DHL6F4tv.png    1,197.12 kB
+8:00:51 PM: ../dist/public/assets/Head_of_production_portrait_05b472f4-ClpppH7J.png  1,224.88 kB
+8:00:51 PM: ../dist/public/assets/The_Crimson_Hunt_poster_18a2fa67-DD0g6FDp.png      1,255.69 kB
+8:00:51 PM: ../dist/public/assets/Lead_actor_portrait_90a633b0-BRptJrTq.png          1,271.39 kB
+8:00:51 PM: ../dist/public/assets/Saffron_Sky_poster_a00da230-4JnBQfif.png           1,300.40 kB
+8:00:51 PM: ../dist/public/assets/Music_director_portrait_6df56eb8-Dyju4q3F.png      1,309.70 kB
+8:00:51 PM: ../dist/public/assets/Cinematographer_portrait_c9cb135a-YVszfUfl.png     1,354.15 kB
+8:00:51 PM: ../dist/public/assets/Supporting_actress_portrait_58b15dcf-BzwiETVi.png  1,401.04 kB
+8:00:51 PM: ../dist/public/assets/Supporting_actor_portrait_005d4f23-UPt1-UWG.png    1,405.20 kB
+8:00:51 PM: ../dist/public/assets/epic_action_cinema_scene-DoitrisP.png              1,413.30 kB
+8:00:51 PM: ../dist/public/assets/Founder_producer_portrait_5f57cca1-CUASohda.png    1,426.90 kB
+8:00:51 PM: ../dist/public/assets/film_noir_theatrical_scene-DlqoJNWY.png            1,441.20 kB
+8:00:51 PM: ../dist/public/assets/VFX_supervisor_portrait_0b75679c-DExme8u0.png      1,446.89 kB
+8:00:51 PM: ../dist/public/assets/Filming_candid_moment_ef773bec-DSptgzdK.png        1,562.86 kB
+8:00:51 PM: ../dist/public/assets/Post_production_scene_3f8c2b66-DV5hBobE.png        1,593.30 kB
+8:00:51 PM: ../dist/public/assets/cinematic_film_production_set-DKHs7rWU.png         1,638.64 kB
+8:00:51 PM: ../dist/public/assets/Lead_actress_portrait_85f74da0-PbgQ0Rf6.png        1,654.93 kB
+8:00:51 PM: ../dist/public/assets/The_Rising_Shadows_poster_d7ecb704-CvToIKSZ.png    1,668.78 kB
+8:00:51 PM: ../dist/public/assets/Veer_Legend_Within_poster_c8d4b7b8-rxASjy4B.png    1,689.14 kB
+8:00:51 PM: ../dist/public/assets/Eternal_Bloom_poster_f0413118-BxAmWn-b.png         1,736.30 kB
+8:00:51 PM: ../dist/public/assets/Behind_scenes_production_c6e208ce-DjPb-ItX.png     1,792.85 kB
+8:00:51 PM: ../dist/public/assets/City_of_Wolves_poster_3810bbbf-D-SbPC3L.png        1,836.48 kB
+8:00:51 PM: ../dist/public/assets/Film_set_background_dff6f877-CiMD5mol.png          1,876.40 kB
+8:00:51 PM: ../dist/public/assets/Dance_filming_BTS_afbd7d8d-ClZUkBGW.png            1,906.90 kB
+8:00:51 PM: ../dist/public/assets/bollywood_premiere_red_carpet-CCvHrc2I.png         1,927.35 kB
+8:00:51 PM: ../dist/public/assets/index-C7Bbrr2V.css                                    80.45 kB │ gzip:  12.68 kB
+8:00:51 PM: ../dist/public/assets/index-B-Za3WMk.js                                    501.94 kB │ gzip: 154.30 kB
+8:00:51 PM: 
+8:00:51 PM: (!) Some chunks are larger than 500 kB after minification. Consider:
+8:00:51 PM: - Using dynamic import() to code-split the application
+8:00:51 PM: - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+8:00:51 PM: - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+8:00:51 PM: ✓ built in 4.02s
+8:00:51 PM:   dist/index.js  8.1kb
+8:00:51 PM: ⚡ Done in 3ms
+8:00:51 PM: ​
+8:00:51 PM: (build.command completed in 4.3s)
+8:00:51 PM: ​
+8:00:51 PM: Deploy site                                                   
+8:00:51 PM: ────────────────────────────────────────────────────────────────
+8:00:51 PM: ​
+8:00:51 PM: Section completed: deploying
+8:00:51 PM: ​
+8:00:51 PM: Configuration error                                           
+8:00:51 PM: ────────────────────────────────────────────────────────────────
+8:00:51 PM: ​
+8:00:51 PM:   Error message
+8:00:51 PM:   Deploy did not succeed: Deploy directory 'dist/client' does not exist
+8:00:51 PM: ​
+8:00:51 PM:   Resolved config
+8:00:51 PM:   build:
+8:00:51 PM:     command: npm run build
+8:00:51 PM:     commandOrigin: config
+8:00:51 PM:     environment:
+8:00:51 PM:       - NODE_VERSION
+8:00:51 PM:     publish: /opt/build/repo/dist/client
+8:00:51 PM:     publishOrigin: config
+8:00:51 PM:   redirects:
+8:00:51 PM:     - from: /api/*
+      status: 200
+      to: /.netlify/functions/server/:splat
+    - from: /*
+      status: 200
+      to: /index.html
+  redirectsOrigin: config
+8:00:51 PM: Build failed due to a user error: Build script returned non-zero exit code: 2
+8:00:51 PM: Failing build: Failed to build site
+8:00:52 PM: Finished processing build request in 19.285s
