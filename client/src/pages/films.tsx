@@ -4,20 +4,20 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Play } from "lucide-react";
-import posterShadows from "@assets/generated_images/The_Rising_Shadows_poster_d7ecb704.png";
-import posterBloom from "@assets/generated_images/Eternal_Bloom_poster_f0413118.png";
-import posterWolves from "@assets/generated_images/City_of_Wolves_poster_3810bbbf.png";
-import posterVeer from "@assets/generated_images/Veer_Legend_Within_poster_c8d4b7b8.png";
-import posterHunt from "@assets/generated_images/The_Crimson_Hunt_poster_18a2fa67.png";
-import posterSky from "@assets/generated_images/Saffron_Sky_poster_a00da230.png";
-import btsProduction from "@assets/generated_images/Behind_scenes_production_c6e208ce.png";
-import btsCandid from "@assets/generated_images/Filming_candid_moment_ef773bec.png";
-import btsDance from "@assets/generated_images/Dance_filming_BTS_afbd7d8d.png";
-import btsPost from "@assets/generated_images/Post_production_scene_3f8c2b66.png";
-import leadActorImg from "@assets/generated_images/Lead_actor_portrait_90a633b0.png";
-import leadActressImg from "@assets/generated_images/Lead_actress_portrait_85f74da0.png";
-import supportingActorImg from "@assets/generated_images/Supporting_actor_portrait_005d4f23.png";
-import supportingActressImg from "@assets/generated_images/Supporting_actress_portrait_58b15dcf.png";
+import posterShadows from "@assets/generated_images/the_rising_shadows_poster.png";
+import posterBloom from "@assets/generated_images/eternal_bloom_poster.png";
+import posterWolves from "@assets/generated_images/city_of_wolves_poster.png";
+import posterVeer from "@assets/generated_images/veer_legend_within_poster.png";
+import posterHunt from "@assets/generated_images/the_crimson_hunt_poster.png";
+import posterSky from "@assets/generated_images/saffron_sky_poster.png";
+import btsProduction from "@assets/generated_images/behind_scenes_production_setup.png";
+import btsCandid from "@assets/generated_images/filming_candid_moment_actors.png";
+import btsDance from "@assets/generated_images/dance_filming_bts_choreography.png";
+import btsPost from "@assets/generated_images/post_production_editing_suite.png";
+import leadActorImg from "@assets/generated_images/lead_actor_portrait_headshot.png";
+import leadActressImg from "@assets/generated_images/lead_actress_portrait_headshot.png";
+import supportingActorImg from "@assets/generated_images/supporting_actor_portrait_headshot.png";
+import supportingActressImg from "@assets/generated_images/supporting_actress_portrait_headshot.png";
 
 const films = [
   {

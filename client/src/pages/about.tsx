@@ -1,4 +1,4 @@
-import filmSetBg from "@assets/generated_images/Film_set_background_dff6f877.png";
+import filmSetBg from "@assets/generated_images/film_set_outdoor_location.png";
 
 export default function About() {
   return (

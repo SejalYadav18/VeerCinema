@@ -1,11 +1,11 @@
 import { Card } from "@/components/ui/card";
-import founderImg from "@assets/generated_images/Founder_producer_portrait_5f57cca1.png";
-import productionHeadImg from "@assets/generated_images/Head_of_production_portrait_05b472f4.png";
-import castingDirectorImg from "@assets/generated_images/Casting_director_portrait_9cb67a41.png";
-import scriptLeadImg from "@assets/generated_images/Script_lead_portrait_6f913024.png";
-import cinematographerImg from "@assets/generated_images/Cinematographer_portrait_c9cb135a.png";
-import vfxSupervisorImg from "@assets/generated_images/VFX_supervisor_portrait_0b75679c.png";
-import musicDirectorImg from "@assets/generated_images/Music_director_portrait_6df56eb8.png";
+import founderImg from "@assets/generated_images/founder_producer_ceo_headshot.png";
+import productionHeadImg from "@assets/generated_images/head_production_producer_headshot.png";
+import castingDirectorImg from "@assets/generated_images/casting_director_portrait_headshot.png";
+import scriptLeadImg from "@assets/generated_images/script_writer_portrait_headshot.png";
+import cinematographerImg from "@assets/generated_images/cinematographer_portrait_headshot.png";
+import vfxSupervisorImg from "@assets/generated_images/vfx_supervisor_portrait_headshot.png";
+import musicDirectorImg from "@assets/generated_images/music_director_portrait_headshot.png";
 
 const founder = {
   name: "Veer Pratap Singh",

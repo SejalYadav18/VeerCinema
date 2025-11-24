@@ -1,12 +1,12 @@
 import { Card } from "@/components/ui/card";
-import leadActorImg from "@assets/generated_images/Lead_actor_portrait_90a633b0.png";
-import leadActressImg from "@assets/generated_images/Lead_actress_portrait_85f74da0.png";
-import supportingActorImg from "@assets/generated_images/Supporting_actor_portrait_005d4f23.png";
-import supportingActressImg from "@assets/generated_images/Supporting_actress_portrait_58b15dcf.png";
-import directorImg from "@assets/generated_images/Film_director_portrait_16097a7d.png";
-import cinematographerImg from "@assets/generated_images/Cinematographer_portrait_c9cb135a.png";
-import scriptWriterImg from "@assets/generated_images/Script_writer_portrait_705de9b7.png";
-import musicDirectorImg from "@assets/generated_images/Music_director_portrait_6df56eb8.png";
+import leadActorImg from "@assets/generated_images/lead_actor_portrait_headshot.png";
+import leadActressImg from "@assets/generated_images/lead_actress_portrait_headshot.png";
+import supportingActorImg from "@assets/generated_images/supporting_actor_portrait_headshot.png";
+import supportingActressImg from "@assets/generated_images/supporting_actress_portrait_headshot.png";
+import directorImg from "@assets/generated_images/film_director_portrait_headshot.png";
+import cinematographerImg from "@assets/generated_images/cinematographer_portrait_headshot.png";
+import scriptWriterImg from "@assets/generated_images/script_writer_portrait_headshot.png";
+import musicDirectorImg from "@assets/generated_images/music_director_portrait_headshot.png";
 
 const talents = [
   {
